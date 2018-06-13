@@ -58,6 +58,7 @@ let
         ./modules/services/postgresql
         ./modules/services/redis
         ./modules/services/skhd
+        ./modules/services/synapse-bt.nix
         ./modules/programs/bash
         ./modules/programs/fish.nix
         ./modules/programs/gnupg.nix

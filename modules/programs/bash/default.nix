@@ -38,7 +38,7 @@ in
     environment.systemPackages =
       [ # Include bash package
         pkgs.bashInteractive
-      ] ++ optional cfg.enableCompletion pkgs.bash-completion;
+      ] ++ optionals cfg.enableCompletion [ pkgs.bash-completion pkgs.nix-bash-completions ];
 
     environment.pathsToLink =
       [ "/etc/bash_completion.d"
